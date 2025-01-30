@@ -1,0 +1,10 @@
+@use "normalize.css";
+@use "variables.scss" as *;
+
+* {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #10100e;
+}
