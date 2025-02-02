@@ -16,7 +16,6 @@ const PeoplePage = ({ setErrorApi }) => {
       const peopleList = res.results.map(({ name, url }) => {
         const id = getPeopleId(url);
         const img = getPeopleImg(id);
-        console.log(img);
         return {
           id,
           name,
@@ -37,7 +36,7 @@ const PeoplePage = ({ setErrorApi }) => {
 
   return (
     <>
-      <h1>Navigation</h1>
+      <h1 className="header__text">Navigation</h1>
       {people && <PeopleList people={people} />}
     </>
   );

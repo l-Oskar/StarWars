@@ -1,5 +1,13 @@
 @use "../../styles/variables.scss" as *;
 
-#App {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+.App {
+  max-width: $widthMax;
+  margin: 0 auto;
+  padding: $spacingLarge 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .App {
+    padding: $spacingLarge $spacingLarge;
+  }
 }

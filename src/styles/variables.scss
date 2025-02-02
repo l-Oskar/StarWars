@@ -1,14 +1,40 @@
 //colors
 $colorWhite: #d9d9d9;
 $colorBlack: #10100e;
-$colorGray: #e5e5e5;
+$colorGray: #474747;
 $colorYelow: #ffff00;
+$colorBlue: #6a83fb;
+$colorViolet: #ae72c2;
 
 //radius
 $borderRadiusSmall: 5px;
 
 //spacing
 $spacingMedium: 20px;
+$spacingLarge: 30px;
 
 //fonts
+$fontFamilyMain: sans-serif;
+
+$fontSizeMain: 16px;
 $fontSizeHeader: 26px;
+
+$fontBold: 600;
+
+$widthMax: 1200px;
+
+//themes
+$themeDefaultHeader: #cccc46;
+
+$themeDefaultBGImg: url("../static/bg.jpg");
+
+$transition4: 0.4s;
+
+//shadows
+$testShadowYelow:
+  0 0 2px $colorWhite,
+  0 0 40px $colorYelow;
+
+$testShadowViolet:
+  0 0 2px $colorWhite,
+  0 0 40px $colorViolet;

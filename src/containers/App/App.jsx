@@ -1,11 +1,22 @@
-import style from "./App.module.scss";
-import PeoplePage from "../../containers/PeoplePage/PeoplePage";
+import { NavLink, Routes, Route } from "react-router-dom";
+import routesConfig from "../../routes/routesConfig";
+import Header from "../../components/Header/Header";
+import styles from "./App.module.scss";
 
 function App() {
   return (
     <>
-      <div id={style.App}>
-        <PeoplePage />
+      <div className={styles.App}>
+        <Header />
+        <Routes>
+          {routesConfig.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              element={<route.element />}></Route>
+          ))}
+        </Routes>
       </div>
     </>
   );
