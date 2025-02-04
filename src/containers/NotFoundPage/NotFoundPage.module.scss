@@ -1,1 +1,15 @@
 @use "../../styles/variables.scss" as *;
+
+.notFoundImg {
+  width: 290px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.text {
+  margin-top: $spacingLarge;
+  font-size: $fontSizeHeader;
+  color: $colorWhite;
+  text-align: center;
+  text-shadow: $textShadowBlue;
+}

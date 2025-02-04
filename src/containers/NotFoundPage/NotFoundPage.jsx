@@ -1,9 +1,16 @@
+import { useLocation } from "react-router-dom";
+import img from "./img/notFoundImg.png";
 import styles from "./NotFoundPage.module.scss";
 
-const NotFoundPage = (props) => {
+const NotFoundPage = () => {
+  let location = useLocation();
+
   return (
     <>
-      <h1 className="header__text">NotFoundPage</h1>{" "}
+      <img src={img} alt="Not found" className={styles.notFoundImg} />
+      <p className={styles.text}>
+        No match for <u>{location.pathname}</u>
+      </p>
     </>
   );
 };

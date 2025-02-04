@@ -1,13 +1,13 @@
 @use "../../styles/variables.scss" as *;
 
-.App {
+.wrapper {
   max-width: $widthMax;
   margin: 0 auto;
   padding: $spacingLarge 0;
 }
 
 @media screen and (max-width: 1400px) {
-  .App {
+  .wrapper {
     padding: $spacingLarge $spacingLarge;
   }
 }

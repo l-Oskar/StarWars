@@ -1,11 +1,1 @@
 @use "../../styles/variables.scss" as *;
-
-h1 {
-  margin: $spacingMedium 0 0 30px;
-  color: rgb(113, 113, 113);
-  transition: 2s;
-
-  &:hover {
-    color: #dfdfdf;
-  }
-}

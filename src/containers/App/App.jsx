@@ -1,12 +1,12 @@
-import { NavLink, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import routesConfig from "../../routes/routesConfig";
-import Header from "../../components/Header/Header";
+import Header from "@components/Header/Header";
 import styles from "./App.module.scss";
 
 function App() {
   return (
     <>
-      <div className={styles.App}>
+      <div className={styles.wrapper}>
         <Header />
         <Routes>
           {routesConfig.map((route, index) => (

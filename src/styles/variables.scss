@@ -12,6 +12,7 @@ $borderRadiusSmall: 5px;
 //spacing
 $spacingMedium: 20px;
 $spacingLarge: 30px;
+$spacingXLarge: 40px;
 
 //fonts
 $fontFamilyMain: sans-serif;
@@ -31,10 +32,14 @@ $themeDefaultBGImg: url("../static/bg.jpg");
 $transition4: 0.4s;
 
 //shadows
-$testShadowYelow:
+$textShadowYelow:
   0 0 2px $colorWhite,
   0 0 40px $colorYelow;
 
-$testShadowViolet:
+$textShadowBlue:
+  0 0 2px $colorWhite,
+  0 0 40px $colorBlue;
+
+$textShadowViolet:
   0 0 2px $colorWhite,
   0 0 40px $colorViolet;
