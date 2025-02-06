@@ -1,0 +1,46 @@
+@use "@styles/variables.scss" as *;
+
+.button {
+  min-width: 100px;
+  padding: 10px;
+  font-size: fontSizeMain;
+  font-weight: $fontBold;
+  font-family: $fontFamilyMain;
+
+  background: none;
+  outline: none;
+
+  transition: $transition4;
+
+  cursor: pointer;
+
+  &:disabled,
+  &:disabled:hover {
+    background-color: transparent;
+    border: 1px solid $colorGray;
+    color: $colorGray;
+    cursor: auto;
+  }
+}
+
+.dark {
+  border: 1px solid $colorWhite;
+  border-radius: $borderRadiusSmall;
+  color: $colorWhite;
+
+  &:hover {
+    background-color: $colorWhite;
+    color: $colorBlack;
+  }
+}
+
+.light {
+  border: 1px solid $colorBlack;
+  border-radius: $borderRadiusSmall;
+  color: $colorBlack;
+
+  &:hover {
+    background-color: $colorBlack;
+    color: $colorWhite;
+  }
+}

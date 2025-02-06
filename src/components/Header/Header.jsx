@@ -6,20 +6,14 @@ const Header = () => {
     <div className={styles.container}>
       <ul className={styles.list__container}>
         <li>
-          <NavLink to="/" exact>
-            Home
-          </NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
           {" "}
-          <NavLink to="/people" exact>
-            People
-          </NavLink>
+          <NavLink to="/people/?page=1">People</NavLink>
         </li>
         <li>
-          <NavLink to="/not-found" exact>
-            Not Found
-          </NavLink>
+          <NavLink to="/not-found">Not Found</NavLink>
         </li>
       </ul>
     </div>
