@@ -27,6 +27,13 @@ export const Light = {
   },
 };
 
+export const Voilet = {
+  args: {
+    ...props,
+    theme: "violet",
+  },
+};
+
 export const Disabled = {
   args: {
     ...props,

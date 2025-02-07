@@ -44,3 +44,14 @@
     color: $colorWhite;
   }
 }
+
+.violet {
+  border: 1px solid $colorViolet;
+  border-radius: $borderRadiusSmall;
+  color: $colorViolet;
+
+  &:hover {
+    background-color: $colorViolet;
+    color: $colorWhite;
+  }
+}

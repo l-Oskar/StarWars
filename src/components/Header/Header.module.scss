@@ -23,15 +23,15 @@
     font-family: $fontFamilyMain;
     text-decoration: none;
     font-weight: $fontBold;
-    text-shadow: $textShadowViolet;
+    text-shadow: $textShadowTheme;
     transition: $transition4;
     border: 2px solid transparent;
   }
 
   :global(a.active) {
-    border: 2px solid $colorViolet;
+    border: 2px solid $themeColor;
     border-radius: $borderRadiusSmall;
     text-shadow: none;
-    color: $colorViolet;
+    color: $themeColor;
   }
 }

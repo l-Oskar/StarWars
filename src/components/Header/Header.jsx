@@ -10,7 +10,7 @@ const Header = () => {
         </li>
         <li>
           {" "}
-          <NavLink to="/people/?page=1">People</NavLink>
+          <NavLink to="/people/?page=">People</NavLink>
         </li>
         <li>
           <NavLink to="/not-found">Not Found</NavLink>

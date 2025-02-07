@@ -6,20 +6,28 @@ $colorYelow: #ffff00;
 $colorBlue: #6a83fb;
 $colorViolet: #ae72c2;
 
+$themeColor: $colorViolet;
+$themeColorS: $colorWhite;
+
 //radius
 $borderRadiusSmall: 5px;
+$borderRadiusMedium: 8px;
 
 //spacing
+$spacingXSmall: 5px;
 $spacingSmall: 10px;
 $spacingMedium: 20px;
 $spacingLarge: 30px;
 $spacingXLarge: 40px;
+
+$marginList: 7px;
 
 //fonts
 $fontFamilyMain: sans-serif;
 
 $fontSizeMain: 16px;
 $fontSizeHeader: 26px;
+$fontSizeSubHeader: 18px;
 
 $fontBold: 600;
 
@@ -44,3 +52,7 @@ $textShadowBlue:
 $textShadowViolet:
   0 0 2px $colorWhite,
   0 0 40px $colorViolet;
+
+$textShadowTheme:
+  0 0 2px $themeColorS,
+  0 0 40px $themeColor;
