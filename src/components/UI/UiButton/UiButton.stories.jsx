@@ -34,6 +34,27 @@ export const Voilet = {
   },
 };
 
+export const Yelow = {
+  args: {
+    ...props,
+    theme: "yelow",
+  },
+};
+
+export const Blue = {
+  args: {
+    ...props,
+    theme: "blue",
+  },
+};
+
+export const Red = {
+  args: {
+    ...props,
+    theme: "red",
+  },
+};
+
 export const Disabled = {
   args: {
     ...props,

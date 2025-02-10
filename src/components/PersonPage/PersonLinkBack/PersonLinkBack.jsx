@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import iconBack from "./img/back.png";
+import UiButton from "@ui/UiButton";
 import styles from "./PersonLinkBack.module.scss";
 
 const PersonLinkBack = () => {
@@ -11,9 +13,14 @@ const PersonLinkBack = () => {
 
   return (
     <>
-      <a href="#" onClick={handleGoBack} className={styles.link}>
-        <span>Go back</span>
-      </a>
+      <div className={styles.wrapper}>
+        <UiButton
+          img={iconBack}
+          text="Back"
+          handleChange={handleGoBack}
+          theme="violet"
+        />
+      </div>
     </>
   );
 };

@@ -5,6 +5,7 @@ $colorGray: #474747;
 $colorYelow: #ffff00;
 $colorBlue: #6a83fb;
 $colorViolet: #ae72c2;
+$colorRed: #f75d83;
 
 $themeColor: $colorViolet;
 $themeColorS: $colorWhite;
@@ -56,3 +57,7 @@ $textShadowViolet:
 $textShadowTheme:
   0 0 2px $themeColorS,
   0 0 40px $themeColor;
+
+:export {
+  themeColor: $themeColor;
+}

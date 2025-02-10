@@ -52,6 +52,38 @@
 
   &:hover {
     background-color: $colorViolet;
-    color: $colorWhite;
+    color: $themeColorS;
+  }
+}
+
+.yelow {
+  border: 1px solid $colorYelow;
+  border-radius: $borderRadiusSmall;
+  color: $colorYelow;
+
+  &:hover {
+    background-color: $colorYelow;
+    color: $themeColorS;
+  }
+}
+
+.blue {
+  border: 1px solid $colorBlue;
+  border-radius: $borderRadiusSmall;
+  color: $colorBlue;
+
+  &:hover {
+    background-color: $colorBlue;
+    color: $themeColorS;
+  }
+}
+.red {
+  border: 1px solid $colorRed;
+  border-radius: $borderRadiusSmall;
+  color: $colorRed;
+
+  &:hover {
+    background-color: $colorRed;
+    color: $themeColorS;
   }
 }

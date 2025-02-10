@@ -11,7 +11,9 @@ const PersonInfo = ({ personInfo }) => {
               data && (
                 <li className={styles.list__item} key={title}>
                   <span className={styles.list__title}>{title} </span>:{" "}
-                  {data == "n/a" ? "Unknown" : data}
+                  {data == "n/a"
+                    ? "Unknown"
+                    : data.charAt(0).toUpperCase() + data.slice(1)}
                 </li>
               )
           )}

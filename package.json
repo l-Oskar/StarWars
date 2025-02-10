@@ -16,8 +16,10 @@
     "normalize.css": "^8.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-loader-spinner": "^6.1.6",
     "react-router": "^7.1.5",
-    "react-router-dom": "^7.1.5"
+    "react-router-dom": "^7.1.5",
+    "react-svg-spinners": "^0.3.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",

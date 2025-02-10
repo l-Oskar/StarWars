@@ -17,6 +17,7 @@ const PeopleNavigation = ({ getResource, prevPage, nextPage, countePage }) => {
             text="Previous"
             handleChange={handleChangePrev}
             disabled={!prevPage}
+            theme="violet"
           />
         </Link>
         <Link to={`/people/?page=${countePage + 1}`} className={styles.button}>
@@ -24,6 +25,7 @@ const PeopleNavigation = ({ getResource, prevPage, nextPage, countePage }) => {
             text="Next"
             handleChange={handleChangeNext}
             disabled={!nextPage}
+            theme="violet"
           />
         </Link>
       </div>
