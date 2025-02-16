@@ -7,6 +7,7 @@ import {
   getPeopleId,
   getPeopleImg,
   getPeoplePageId,
+  getOtherImg,
 } from "@services/getPeopleData";
 import { useQueryParams } from "@hooks/useQueryParams";
 import PeopleList from "@components/PeoplePage/PeopleList";

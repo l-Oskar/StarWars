@@ -11,7 +11,7 @@ import PersonLinkBack from "@components/PersonPage/PersonLinkBack";
 
 import UiLoading from "@ui/UiLoading";
 
-import { getPeopleImg } from "@services/getPeopleData";
+import { getPeopleImg, getOtherImg } from "@services/getPeopleData";
 import { getApiResource } from "@utils/network";
 import { API_PERSON } from "@constants/api";
 import styles from "./PersonPage.module.scss";
@@ -21,6 +21,7 @@ const PersonFilms = React.lazy(
 );
 
 const PersonPage = ({ setErrorApi }) => {
+  const [personId, setPersonId] = useState(null);
   const [personInfo, setPersonInfo] = useState(null);
   const [personName, setPersonName] = useState(null);
   const [personImg, setPersonImg] = useState(null);
@@ -30,6 +31,7 @@ const PersonPage = ({ setErrorApi }) => {
   useEffect(() => {
     (async () => {
       const res = await getApiResource(`${API_PERSON}/${id}/`);
+      setPersonId(id);
 
       if (res) {
         setPersonInfo([
@@ -56,7 +58,7 @@ const PersonPage = ({ setErrorApi }) => {
       <div className={styles.wrapper}>
         <span className={styles.person__name}>{personName}</span>
         <div className={styles.container}>
-          <PersonImg img={personImg} name={personName} />
+          <PersonImg img={personImg} name={personName} id={personId} />
           {personInfo && <PersonInfo personInfo={personInfo} />}
           {personFilms && (
             <Suspense fallback={<UiLoading />}>
