@@ -6,9 +6,7 @@ export default {
 
 const props = {
   text: "Button",
-  handleChange: () => {
-    console.log("Pressed!");
-  },
+  handleChange: () => {},
   disabled: false,
   theme: "dark",
 };

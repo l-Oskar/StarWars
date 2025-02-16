@@ -1,1 +1,10 @@
 @use "@styles/variables.scss" as *;
+
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorWhite;
+  text-decoration: underline;
+  height: 50vh;
+}
