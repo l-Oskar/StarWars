@@ -1,14 +1,45 @@
+:root {
+  --primary-color: var(--color-default);
+  --secindary-color: var(--color-default);
+
+  --color-default: var(--color-light);
+  --color-light: #d9d9d9;
+  --color-dark: #474747;
+  --color-yellow: #ffff00;
+  --color-blue: #3498db;
+  --color-violet: #ae72c2;
+  --color-red: #f75d83;
+  --color-green: #8bc34a;
+
+  --theme-bg: var(--theme-default-bg);
+
+  --theme-default-bg: var(--theme-light-bg);
+  --theme-light-bg: url("../static/bg.jpg");
+  --theme-dark-bg: url("../static/bg.jpg");
+  --theme-yellow-bg: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  --theme-blue-bg: linear-gradient(to right, #373b44, #4286f4);
+  --theme-violet-bg: linear-gradient(to right, #373b44, #4286f4);
+  --theme-red-bg: linear-gradient(to right, #2193b0, #6dd5ed);
+  --theme-green-bg: linear-gradient(to right, #f12711, #f5af19);
+}
+
 //colors
 $colorWhite: #d9d9d9;
 $colorBlack: #10100e;
 $colorGray: #474747;
 $colorYelow: #ffff00;
-$colorBlue: #6a83fb;
+$colorBlue: #3498db;
 $colorViolet: #ae72c2;
 $colorRed: #f75d83;
+$colorGreen: #8bc34a;
 
-$themeColor: $colorViolet;
+//themes
+$themeColor: var(--primary-color);
 $themeColorS: $colorWhite;
+
+$themeDefaultHeader: $themeColor;
+
+$themeDefaultBGImg: var(--theme-bg);
 
 //radius
 $borderRadiusSmall: 5px;
@@ -33,11 +64,6 @@ $fontSizeSubHeader: 18px;
 $fontBold: 600;
 
 $widthMax: 1200px;
-
-//themes
-$themeDefaultHeader: #cccc46;
-
-$themeDefaultBGImg: url("../static/bg.jpg");
 
 $transition4: 0.4s;
 

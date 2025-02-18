@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), svgr()],
   resolve: {
     alias: {
       "@components": "/src/components",
@@ -18,6 +19,7 @@ export default defineConfig({
       "@styles": "/src/styles",
       "@utils": "/src/utils",
       "@store": "/src/store",
+      "@context": "/src/context",
     },
   },
 });
