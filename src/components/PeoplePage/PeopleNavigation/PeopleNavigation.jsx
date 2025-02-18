@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { useTheme } from "@context/ThemeProvider";
 
 import UiButton from "@ui/UiButton";
 
@@ -8,6 +9,7 @@ import styles from "./PeopleNavigation.module.scss";
 const PeopleNavigation = ({ getResource, prevPage, nextPage, countePage }) => {
   const handleChangeNext = () => getResource(nextPage);
   const handleChangePrev = () => getResource(prevPage);
+  const isTheme = useTheme().theme;
 
   return (
     <>
@@ -17,7 +19,7 @@ const PeopleNavigation = ({ getResource, prevPage, nextPage, countePage }) => {
             text="Previous"
             handleChange={handleChangePrev}
             disabled={!prevPage}
-            theme="violet"
+            theme={isTheme}
           />
         </Link>
         <Link to={`/people/?page=${countePage + 1}`} className={styles.button}>
@@ -25,7 +27,7 @@ const PeopleNavigation = ({ getResource, prevPage, nextPage, countePage }) => {
             text="Next"
             handleChange={handleChangeNext}
             disabled={!nextPage}
-            theme="violet"
+            theme={isTheme}
           />
         </Link>
       </div>

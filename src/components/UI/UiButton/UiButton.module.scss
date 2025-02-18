@@ -23,7 +23,7 @@
   }
 }
 
-.dark {
+.light {
   border: 1px solid $colorWhite;
   border-radius: $borderRadiusSmall;
   color: $colorWhite;
@@ -34,13 +34,13 @@
   }
 }
 
-.light {
-  border: 1px solid $colorBlack;
+.dark {
+  border: 1px solid $colorGray;
   border-radius: $borderRadiusSmall;
-  color: $colorBlack;
+  color: $colorGray;
 
   &:hover {
-    background-color: $colorBlack;
+    background-color: $colorGray;
     color: $colorWhite;
   }
 }
@@ -52,18 +52,18 @@
 
   &:hover {
     background-color: $colorViolet;
-    color: $colorWhite;
+    color: $colorBlack;
   }
 }
 
-.yelow {
+.yellow {
   border: 1px solid $colorYelow;
   border-radius: $borderRadiusSmall;
   color: $colorYelow;
 
   &:hover {
     background-color: $colorYelow;
-    color: $themeColorS;
+    color: $colorBlack;
   }
 }
 
@@ -74,7 +74,7 @@
 
   &:hover {
     background-color: $colorBlue;
-    color: $themeColorS;
+    color: white;
   }
 }
 .red {
@@ -84,6 +84,17 @@
 
   &:hover {
     background-color: $colorRed;
-    color: $themeColorS;
+    color: white;
+  }
+}
+
+.green {
+  border: 1px solid $colorGreen;
+  border-radius: $borderRadiusSmall;
+  color: $colorGreen;
+
+  &:hover {
+    background-color: $colorGreen;
+    color: $colorBlack;
   }
 }

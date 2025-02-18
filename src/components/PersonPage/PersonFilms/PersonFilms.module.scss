@@ -18,7 +18,7 @@
   align-items: center;
   padding: $spacingXSmall;
   margin-bottom: $marginList;
-  color: $colorWhite;
+  color: $themeColorS;
 }
 
 .item__episode {
@@ -34,6 +34,7 @@
 }
 
 .item__title {
+  color: $themeColor;
   text-shadow: $textShadowTheme;
 }
 

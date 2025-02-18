@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import React, { useEffect, useState, Suspense } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { useTheme } from "@context/ThemeProvider";
 
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
 
@@ -12,7 +13,7 @@ import PersonLinkBack from "@components/PersonPage/PersonLinkBack";
 
 import UiLoading from "@ui/UiLoading";
 
-import { getPeopleImg, getOtherImg } from "@services/getPeopleData";
+import { getPeopleImg } from "@services/getPeopleData";
 import { getApiResource } from "@utils/network";
 import { API_PERSON } from "@constants/api";
 import styles from "./PersonPage.module.scss";
@@ -28,6 +29,8 @@ const PersonPage = ({ setErrorApi }) => {
   const [personImg, setPersonImg] = useState(null);
   const [personFilms, setPersonFilms] = useState(null);
   const [personFavorite, setPersonFavorite] = useState(false);
+
+  const isTheme = useTheme().theme;
 
   const storeDate = useSelector((state) => state.favoriteReducer);
 
@@ -48,7 +51,6 @@ const PersonPage = ({ setErrorApi }) => {
           { title: "Skin color", data: res.skin_color },
           { title: "Birth year", data: res.birth_year },
           { title: "Gender", data: res.gender },
-          // {title: 'Films', data: res.films},
         ]);
         setPersonName(res.name);
         setPersonImg(getPeopleImg(id));
@@ -74,7 +76,7 @@ const PersonPage = ({ setErrorApi }) => {
           />
           {personInfo && <PersonInfo personInfo={personInfo} />}
           {personFilms && (
-            <Suspense fallback={<UiLoading />}>
+            <Suspense fallback={<UiLoading theme={isTheme} />}>
               <PersonFilms personFilms={personFilms} />
             </Suspense>
           )}

@@ -1,6 +1,6 @@
 :root {
   --primary-color: var(--color-default);
-  --secindary-color: var(--color-default);
+  --secondary-color: black;
 
   --color-default: var(--color-light);
   --color-light: #d9d9d9;
@@ -17,14 +17,15 @@
   --theme-light-bg: url("../static/bg.jpg");
   --theme-dark-bg: url("../static/bg.jpg");
   --theme-yellow-bg: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  --theme-blue-bg: linear-gradient(to right, #373b44, #4286f4);
-  --theme-violet-bg: linear-gradient(to right, #373b44, #4286f4);
-  --theme-red-bg: linear-gradient(to right, #2193b0, #6dd5ed);
-  --theme-green-bg: linear-gradient(to right, #f12711, #f5af19);
+  --theme-blue-bg: linear-gradient(to right, #654ea3, #eaafc8);
+  --theme-violet-bg: linear-gradient(to right, #ffebd2, #ffcba4);
+  --theme-red-bg: linear-gradient(to right, #00b4db, #0083b0);
+  --theme-green-bg: linear-gradient(to right, #659999, #f4791f);
 }
 
 //colors
 $colorWhite: #d9d9d9;
+$colorWWhite: #ffffff;
 $colorBlack: #10100e;
 $colorGray: #474747;
 $colorYelow: #ffff00;
@@ -35,7 +36,7 @@ $colorGreen: #8bc34a;
 
 //themes
 $themeColor: var(--primary-color);
-$themeColorS: $colorWhite;
+$themeColorS: var(--secondary-color);
 
 $themeDefaultHeader: $themeColor;
 

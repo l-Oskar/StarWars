@@ -32,10 +32,10 @@ export const Voilet = {
   },
 };
 
-export const Yelow = {
+export const Yellow = {
   args: {
     ...props,
-    theme: "yelow",
+    theme: "yellow",
   },
 };
 
@@ -50,6 +50,13 @@ export const Red = {
   args: {
     ...props,
     theme: "red",
+  },
+};
+
+export const Green = {
+  args: {
+    ...props,
+    theme: "green",
   },
 };
 
