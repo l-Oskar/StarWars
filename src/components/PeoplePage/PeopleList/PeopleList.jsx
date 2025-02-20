@@ -11,7 +11,7 @@ const PeopleList = ({ people }) => {
         {people.map(({ id, name, img }) => (
           <li className={styles.list__item} key={id}>
             <Link to={`/people/${id}`}>
-              <UiImg cl="person__photo" img={img} name={name} id={id} />
+              <UiImg cl="people_list" img={img} name={name} id={id} />
               <p>{name}</p>
             </Link>
           </li>

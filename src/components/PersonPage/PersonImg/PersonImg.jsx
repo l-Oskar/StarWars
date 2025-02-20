@@ -32,6 +32,7 @@ const PersonImg = ({ img, name, id, personFavorite, setPersonFavorite }) => {
     <>
       <div className={styles.container}>
         <UiImg cl="img" img={img} name={name} id={id} />
+        {/* {personFavorite ? () => IconFavorite : () => IconFavoriteActive} */}
         <img
           src={personFavorite ? iconFavoriteActive : iconFavorite}
           onClick={dispatchFavoritePeople}

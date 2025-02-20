@@ -1,0 +1,31 @@
+@use "@styles/variables.scss" as *;
+
+.wrapper_input {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.input {
+  min-width: 300px;
+  padding: 10px 15px;
+  border: 3px solid $themeColor;
+  border-radius: $borderRadiusSmall;
+  font-size: $fontSizeMain;
+  outline: none;
+  padding-right: 40px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  object-fit: cover;
+  object-position: center center;
+  transition: $transition4;
+  opacity: 0.4;
+  cursor: pointer;
+  fill: #fff;
+}

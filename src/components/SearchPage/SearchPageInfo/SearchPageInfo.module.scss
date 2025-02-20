@@ -1,0 +1,38 @@
+@use "@styles/variables.scss" as *;
+
+.list__container {
+  margin: $spacingMedium;
+  padding: 0;
+  list-style: none;
+  column-count: 3;
+}
+
+.list__item {
+  a {
+    display: inline-flex;
+    color: $themeColor;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+  }
+}
+
+.person__name {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 $spacingSmall;
+  color: $themeColor;
+  text-shadow: $textShadowTheme;
+}
+
+.person__comment {
+  color: $themeColor;
+}
+
+@media screen and (max-width: 850px) {
+  .list__container {
+    column-count: 2;
+  }
+}

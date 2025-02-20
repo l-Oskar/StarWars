@@ -9,7 +9,6 @@ import styles from "./UiLoading.module.scss";
 const UiLoading = ({ theme }) => {
   return (
     <>
-      {console.log(theme)}
       <RevolvingDot
         visible={true}
         height="80"

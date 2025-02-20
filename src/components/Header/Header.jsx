@@ -4,7 +4,6 @@ import Favorite from "@components/Favorite";
 import ImgYoda from "./img/yoda.svg?react";
 import ImgVayder from "./img/vayder.svg?react";
 import ImgMando from "./img/mando.svg?react";
-import ImgChewbacca from "./img/chewbacca.svg?react";
 import ImgR2 from "./img/r2.svg?react";
 import ImgStar from "./img/star.svg?react";
 import ImgAhsoka from "./img/ahsoka.svg?react";
@@ -58,6 +57,9 @@ const Header = () => {
         </li>
         <li>
           <NavLink to="/people/?page=">People</NavLink>
+        </li>
+        <li>
+          <NavLink to="/search">Search</NavLink>
         </li>
         <li>
           <NavLink to="/not-found">Not Found</NavLink>
