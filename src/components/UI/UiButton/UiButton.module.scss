@@ -17,14 +17,14 @@
   &:disabled,
   &:disabled:hover {
     background-color: transparent;
-    border: 1px solid $colorGray;
+    border: 2px solid $colorGray;
     color: $colorGray;
     cursor: auto;
   }
 }
 
 .light {
-  border: 1px solid $colorWhite;
+  border: 2px solid $colorWhite;
   border-radius: $borderRadiusSmall;
   color: $colorWhite;
 
@@ -35,7 +35,7 @@
 }
 
 .dark {
-  border: 1px solid $colorGray;
+  border: 2px solid $colorGray;
   border-radius: $borderRadiusSmall;
   color: $colorGray;
 
@@ -46,7 +46,7 @@
 }
 
 .violet {
-  border: 1px solid $colorViolet;
+  border: 2px solid $colorViolet;
   border-radius: $borderRadiusSmall;
   color: $colorViolet;
 
@@ -57,7 +57,7 @@
 }
 
 .yellow {
-  border: 1px solid $colorYelow;
+  border: 2px solid $colorYelow;
   border-radius: $borderRadiusSmall;
   color: $colorYelow;
 
@@ -68,7 +68,7 @@
 }
 
 .blue {
-  border: 1px solid $colorBlue;
+  border: 2px solid $colorBlue;
   border-radius: $borderRadiusSmall;
   color: $colorBlue;
 
@@ -78,7 +78,7 @@
   }
 }
 .red {
-  border: 1px solid $colorRed;
+  border: 2px solid $colorRed;
   border-radius: $borderRadiusSmall;
   color: $colorRed;
 
@@ -89,7 +89,7 @@
 }
 
 .green {
-  border: 1px solid $colorGreen;
+  border: 2px solid $colorGreen;
   border-radius: $borderRadiusSmall;
   color: $colorGreen;
 

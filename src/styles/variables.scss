@@ -17,10 +17,14 @@
   --theme-light-bg: url("../static/bg.jpg");
   --theme-dark-bg: url("../static/bg.jpg");
   --theme-yellow-bg: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  --theme-blue-bg: linear-gradient(to right, #654ea3, #eaafc8);
-  --theme-violet-bg: linear-gradient(to right, #ffebd2, #ffcba4);
-  --theme-red-bg: linear-gradient(to right, #00b4db, #0083b0);
-  --theme-green-bg: linear-gradient(to right, #659999, #f4791f);
+  --theme-blue-bg: linear-gradient(to right, #1e3c72, #335da7);
+  --theme-violet-bg: linear-gradient(to right, #42275a, #734b6d);
+  --theme-red-bg: linear-gradient(
+    to right,
+    #3f0d12,
+    #a71d31
+  ); //linear-gradient(to right, #00b4db, #0083b0);
+  --theme-green-bg: linear-gradient(to right, #1a2b23, #3a7d44);
 }
 
 //colors

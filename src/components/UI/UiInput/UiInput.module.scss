@@ -1,31 +1,43 @@
 @use "@styles/variables.scss" as *;
 
+$__borderRadius: 4px;
+$__border: 4px;
+$__iconWidth: 30px;
+
 .wrapper_input {
+  box-sizing: border-box;
   position: relative;
   display: inline-flex;
-  justify-content: center;
 }
 
 .input {
   min-width: 300px;
-  padding: 10px 15px;
-  border: 3px solid $themeColor;
+  padding: 10px 10px;
+  border: $__border solid $colorGray;
   border-radius: $borderRadiusSmall;
   font-size: $fontSizeMain;
   outline: none;
-  padding-right: 40px;
+  padding-right: calc($__iconWidth + 5px);
+
+  &:focus {
+    border: $__border solid $themeColor;
+  }
 }
 
 .icon {
-  width: 35px;
-  height: 35px;
+  width: $__iconWidth;
+  height: $__iconWidth;
   position: absolute;
-  top: 3px;
-  right: 3px;
-  object-fit: cover;
+  top: calc($__iconWidth / 4);
+  right: calc($__iconWidth / 4);
+  object-fit: contain;
   object-position: center center;
   transition: $transition4;
-  opacity: 0.4;
+  opacity: 0.7;
   cursor: pointer;
-  fill: #fff;
+  border-left: 1px solid $colorWhite;
+
+  path:first-child {
+    fill: $themeColor;
+  }
 }
