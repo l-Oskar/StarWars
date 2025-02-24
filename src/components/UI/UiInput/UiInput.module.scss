@@ -17,7 +17,7 @@ $__iconWidth: 30px;
   border-radius: $borderRadiusSmall;
   font-size: $fontSizeMain;
   outline: none;
-  padding-right: calc($__iconWidth + 5px);
+  padding-right: calc($__iconWidth + 10px);
 
   &:focus {
     border: $__border solid $themeColor;

@@ -28,6 +28,10 @@
   box-shadow: $textShadowViolet;
 }
 
-.icon {
-  fill: $themeColorS;
+.icon path {
+  fill: $colorWhite;
+}
+
+.icon__active path {
+  fill: $colorRed;
 }

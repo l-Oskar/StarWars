@@ -29,3 +29,23 @@ img {
   transition: color $transition4;
   margin-left: 55px;
 }
+
+//Scroll
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $themeColor;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $themeColorS;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: $themeColorS;
+}

@@ -3,8 +3,7 @@ import UiImg from "@ui/UiImg";
 import { useDispatch } from "react-redux";
 import { setPersonToFavorite, removePersonFromFavorite } from "@store/actions";
 
-import iconFavorite from "./img/favorite.svg";
-import iconFavoriteActive from "./img/favorite-fill.svg";
+import IconFavorite from "./img/favorite.svg?react";
 
 import styles from "./PersonImg.module.scss";
 
@@ -32,13 +31,16 @@ const PersonImg = ({ img, name, id, personFavorite, setPersonFavorite }) => {
     <>
       <div className={styles.container}>
         <UiImg cl="img" img={img} name={name} id={id} />
-        {/* {personFavorite ? () => IconFavorite : () => IconFavoriteActive} */}
-        <img
+        <IconFavorite
+          className={`${styles.icon} ${personFavorite ? styles.icon__active : ""}`}
+          onClick={dispatchFavoritePeople}
+        />
+        {/* <img
           src={personFavorite ? iconFavoriteActive : iconFavorite}
           onClick={dispatchFavoritePeople}
           className={styles.favorite}
           alt="Favorite"
-        />
+        /> */}
       </div>
     </>
   );

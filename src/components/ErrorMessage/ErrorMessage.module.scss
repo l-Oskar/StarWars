@@ -1,5 +1,9 @@
 @use "@styles/variables.scss" as *;
 
+.wrapper {
+  display: grid;
+}
+
 .text {
   width: 600px;
   margin: auto;
@@ -13,4 +17,11 @@
   -webkit-text-stroke-color: $colorYelow;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-fill-color: transparent;
+}
+
+.gif {
+  height: 300px;
+  width: 350px;
+  margin: auto;
+  margin-top: $spacingLarge;
 }
