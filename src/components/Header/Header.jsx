@@ -1,4 +1,8 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+
+import { useTheme } from "@context/ThemeProvider";
+
 import Favorite from "@components/Favorite";
 
 import ImgYoda from "./img/yoda.svg?react";
@@ -9,11 +13,9 @@ import ImgStar from "./img/star.svg?react";
 import ImgAhsoka from "./img/ahsoka.svg?react";
 import ImgC3PO from "./img/c3po.svg?react";
 
-import { useTheme } from "@context/ThemeProvider";
 import THEMES from "@constants/themes";
 
 import styles from "./Header.module.scss";
-import { useEffect, useState } from "react";
 
 const Header = () => {
   const isTheme = useTheme();

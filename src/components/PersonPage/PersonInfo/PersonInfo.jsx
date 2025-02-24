@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 import styles from "./PersonInfo.module.scss";
 
 const PersonInfo = ({ personInfo }) => {

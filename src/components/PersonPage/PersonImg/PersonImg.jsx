@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
-import UiImg from "@ui/UiImg";
 import { useDispatch } from "react-redux";
-import { setPersonToFavorite, removePersonFromFavorite } from "@store/actions";
+
+import UiImg from "@ui/UiImg";
 
 import IconFavorite from "./img/favorite.svg?react";
+
+import { setPersonToFavorite, removePersonFromFavorite } from "@store/actions";
 
 import styles from "./PersonImg.module.scss";
 

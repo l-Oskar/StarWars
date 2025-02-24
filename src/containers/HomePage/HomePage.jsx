@@ -1,5 +1,5 @@
-import UiButton from "@ui/UiButton";
 import ChoseSide from "@components/HomePage/ChoseSide";
+
 import styles from "./HomePage.module.scss";
 
 const HomePage = () => {

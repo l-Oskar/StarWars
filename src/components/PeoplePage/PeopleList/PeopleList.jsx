@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
-import UiImg from "@ui/UiImg";
 import { Link } from "react-router";
+
+import UiImg from "@ui/UiImg";
 
 import styles from "./PeopleList.module.scss";
 

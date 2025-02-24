@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+
 import { getOtherImg } from "@services/getPeopleData";
+
 import styles from "./UiImg.module.scss";
 
 const UiImg = ({ cl, img, name, id }) => {

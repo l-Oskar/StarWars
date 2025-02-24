@@ -1,6 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import routesConfig from "@routes/routesConfig";
+
 import Header from "@components/Header";
+
+import routesConfig from "@routes/routesConfig";
+
 import styles from "./App.module.scss";
 
 function App() {

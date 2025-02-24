@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
+
 import cn from "classnames";
+
 import styles from "./UiButton.module.scss";
 
 const UiButton = ({

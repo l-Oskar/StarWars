@@ -75,7 +75,7 @@ npm run build-gh-pages   # deploy on Github Pages
 - Store state tracking with `redux-devtools-extension`
 </details>
 
-<details><summary>Общее</summary>
+<details><summary>General</summary>
 
 - Setting up Aliases in a Vite application
 - Deploying the application to GitHub Page (`gh-pages` library)

@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
+
+import PeopleList from "@components/PeoplePage/PeopleList";
+import PeopleNavigation from "@components/PeoplePage/PeopleNavigation";
+
+import { useQueryParams } from "@hooks/useQueryParams";
+
 import { getApiResource, changeHTTP } from "@utils/network";
+
 import { API_PEOPLE } from "@constants/api";
 import {
   getPeopleId,
@@ -9,9 +17,7 @@ import {
   getPeoplePageId,
   getOtherImg,
 } from "@services/getPeopleData";
-import { useQueryParams } from "@hooks/useQueryParams";
-import PeopleList from "@components/PeoplePage/PeopleList";
-import PeopleNavigation from "@components/PeoplePage/PeopleNavigation";
+
 import styles from "./PeoplePage.module.scss";
 
 const PeoplePage = ({ setErrorApi }) => {

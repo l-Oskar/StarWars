@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
-import styles from "./SearchPageinfo.module.scss";
 import { Link } from "react-router-dom";
+
 import UiImg from "@ui/UiImg";
+
+import styles from "./SearchPageinfo.module.scss";
 
 const SearchPageinfo = ({ people }) => {
   return (

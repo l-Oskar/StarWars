@@ -1,7 +1,9 @@
+import { useTheme } from "@context/ThemeProvider";
+
 import UiButton from "@ui/UiButton";
 
-import { useTheme } from "@context/ThemeProvider";
 import THEMES from "@constants/themes";
+
 import styles from "./ChoseSide.module.scss";
 
 const ChoseSide = () => {

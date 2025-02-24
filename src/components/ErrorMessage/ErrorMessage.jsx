@@ -1,5 +1,5 @@
-import styles from "./ErrorMessage.module.scss";
 import withU from "./gif/with_u.gif";
+import styles from "./ErrorMessage.module.scss";
 
 const ErrorMessage = () => {
   return (

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+
 import PeopleList from "@components/PeoplePage/PeopleList";
+
 import styles from "./FavoritePage.module.scss";
 
 const FavoritePage = () => {

@@ -2,13 +2,17 @@ import PropTypes from "prop-types";
 import { useCallback, useEffect, useState } from "react";
 import { debounce } from "lodash";
 
-import { getPeopleId, getPeopleImg } from "@services/getPeopleData";
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
-import { getApiResource } from "@utils/network";
-import { API_SEARCH } from "@constants/api";
+
+import UiInput from "@ui/UiInput";
 
 import SearchPageinfo from "@components/SearchPage/SearchPageInfo";
-import UiInput from "@ui/UiInput";
+
+import { getPeopleId, getPeopleImg } from "@services/getPeopleData";
+
+import { getApiResource } from "@utils/network";
+
+import { API_SEARCH } from "@constants/api";
 
 import styles from "./SearchPage.module.scss";
 

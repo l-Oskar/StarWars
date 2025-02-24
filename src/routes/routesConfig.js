@@ -1,9 +1,9 @@
 import HomePage from "@containers/HomePage";
 import PeoplePage from "@containers/PeoplePage";
-import NotFoundPage from "@containers/NotFoundPage";
 import PersonPage from "@containers/PersonPage";
 import FavoritePage from "@containers/FavoritePage";
 import SearchPage from "@containers/SearchPage";
+import NotFoundPage from "@containers/NotFoundPage";
 import ErrorMessage from "@components/ErrorMessage";
 
 const routesConfig = [

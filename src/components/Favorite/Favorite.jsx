@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { takeColor } from "@services/changeCss";
+
 import IconFavorite from "./img/favorite.svg?react";
+
 import styles from "./Favorite.module.scss";
 
 const Favorite = () => {

@@ -1,7 +1,11 @@
 import { useNavigate } from "react-router-dom";
+
 import { useTheme } from "@context/ThemeProvider";
-import iconBack from "./img/back.png";
+
 import UiButton from "@ui/UiButton";
+
+import iconBack from "./img/back.png";
+
 import styles from "./PersonLinkBack.module.scss";
 
 const PersonLinkBack = () => {
@@ -24,7 +28,7 @@ const PersonLinkBack = () => {
         />
       </div>
     </>
-  );
 };
+  );
 
 export default PersonLinkBack;

@@ -3,19 +3,23 @@ import PropTypes from "prop-types";
 import React, { useEffect, useState, Suspense } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+
 import { useTheme } from "@context/ThemeProvider";
 
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
+
+import UiLoading from "@ui/UiLoading";
 
 import PersonInfo from "@components/PersonPage/PersonInfo";
 import PersonImg from "@components/PersonPage/PersonImg";
 import PersonLinkBack from "@components/PersonPage/PersonLinkBack";
 
-import UiLoading from "@ui/UiLoading";
-
 import { getPeopleImg } from "@services/getPeopleData";
+
 import { getApiResource } from "@utils/network";
+
 import { API_PERSON } from "@constants/api";
+
 import styles from "./PersonPage.module.scss";
 
 const PersonFilms = React.lazy(
