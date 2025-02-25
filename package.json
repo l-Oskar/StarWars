@@ -2,6 +2,7 @@
   "name": "star-wars",
   "private": true,
   "version": "0.1.0",
+  "homepage": "https://l-oskar.github.io/StarWars/",
   "type": "module",
   "scripts": {
     "dev": "vite",
