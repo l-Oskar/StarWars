@@ -1,6 +1,22 @@
 @use "@styles/variables.scss" as *;
 
+.wrapper {
+  height: 15vh;
+  display: grid;
+  align-items: flex-end;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: grid;
+
+    button {
+      margin-bottom: 20px;
+    }
+  }
 }

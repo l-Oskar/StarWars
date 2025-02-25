@@ -10,7 +10,7 @@ const ChoseSide = () => {
   const isTheme = useTheme();
   return (
     <div className={styles.wrapper}>
-      <h1 className="header__text">Chose Your Theme</h1>
+      <h2 className="header__text">Chose Your Theme</h2>
       <div className={styles.container}>
         <UiButton
           text="Light"
