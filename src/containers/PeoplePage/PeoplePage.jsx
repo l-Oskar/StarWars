@@ -59,12 +59,12 @@ const PeoplePage = ({ setErrorApi }) => {
 
   return (
     <>
-      <PeopleNavigation
+      {/* <PeopleNavigation
         getResource={getResource}
         prevPage={prevPage}
         nextPage={nextPage}
         countePage={counterPage}
-      />
+      /> */}
       <h1 className="header__text">People page</h1>
       {people && <PeopleList people={people} />}
     </>

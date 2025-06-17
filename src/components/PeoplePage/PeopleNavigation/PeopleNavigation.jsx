@@ -15,7 +15,7 @@ const PeopleNavigation = ({ getResource, prevPage, nextPage, countePage }) => {
   return (
     <>
       <div className={styles.peopleNav}>
-        <Link to={`/people/?page=${countePage - 1}`} className={styles.button}>
+        <Link to={`/people/`} className={styles.button}>
           <UiButton
             text="Previous"
             handleChange={handleChangePrev}
@@ -23,7 +23,7 @@ const PeopleNavigation = ({ getResource, prevPage, nextPage, countePage }) => {
             theme={isTheme}
           />
         </Link>
-        <Link to={`/people/?page=${countePage + 1}`} className={styles.button}>
+        <Link to={`/people/`} className={styles.button}>
           <UiButton
             text="Next"
             handleChange={handleChangeNext}
