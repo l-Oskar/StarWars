@@ -1,49 +1,46 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+
 import { useTheme } from "@context/ThemeProvider";
+
 import UiButton from "@ui/UiButton";
 
 import styles from "./PeopleNavigation.module.scss";
 
-const PeopleNavigation = ({ currentPage, totalPages, onPageChange }) => {
+const PeopleNavigation = ({ getResource, prevPage, nextPage, countePage }) => {
+  const handleChangeNext = () => getResource(nextPage);
+  const handleChangePrev = () => getResource(prevPage);
   const isTheme = useTheme().theme;
 
-  const handlePrev = () => {
-    if (currentPage > 1) {
-      onPageChange(currentPage - 1);
-    }
-  };
-
-  const handleNext = () => {
-    if (currentPage < totalPages) {
-      onPageChange(currentPage + 1);
-    }
-  };
-
   return (
-    <div className={styles.peopleNav}>
-      <UiButton
-        text="Previous"
-        handleChange={handlePrev}
-        disabled={currentPage !== 1}
-        theme={isTheme}
-      />
-      <span className={styles.pageNumber}>
-        Page {currentPage} of {totalPages}
-      </span>
-      <UiButton
-        text="Next"
-        handleChange={handleNext}
-        disabled={currentPage === totalPages}
-        theme={isTheme}
-      />
-    </div>
+    <>
+      <div className={styles.peopleNav}>
+        <Link to={`/people/?page=${countePage - 1}`} className={styles.button}>
+          <UiButton
+            text="Previous"
+            handleChange={handleChangePrev}
+            disabled={!prevPage}
+            theme={isTheme}
+          />
+        </Link>
+        <Link to={`/people/?page=${countePage + 1}`} className={styles.button}>
+          <UiButton
+            text="Next"
+            handleChange={handleChangeNext}
+            disabled={nextPage}
+            theme={isTheme}
+          />
+        </Link>
+      </div>
+    </>
   );
 };
 
 PeopleNavigation.propTypes = {
-  currentPage: PropTypes.number.isRequired,
-  totalPages: PropTypes.number.isRequired,
-  onPageChange: PropTypes.func.isRequired,
+  getResource: PropTypes.func,
+  prevPage: PropTypes.string,
+  nextPage: PropTypes.string,
+  countePage: PropTypes.number,
 };
 
 export default PeopleNavigation;

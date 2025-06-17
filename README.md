@@ -33,7 +33,7 @@ npm run build-gh-pages   # deploy on Github Pages
 
 ## 🦄 API
 
-- https://swapi.dev (main API)
+- https://swapi.info (main API)
 - https://starwars-visualguide.com (photos for API)
 - https://static.wikia.nocookie.net/starwars (fallback photos)
 
