@@ -20,10 +20,10 @@ export const changeHTTP = (url) => {
  */
 export const getApiResource = async (url) => {
   try {
-    const res = await fetch(url);
+    const res = await fetch("https://corsproxy.io/?" + url);
 
     if (!res.ok) {
-      console.error("Problemm !!", error.message);
+      console.error("Problemm !!", res.message);
       return false;
     }
     const data = await res.json();

@@ -33,7 +33,7 @@ const PeoplePage = ({ setErrorApi }) => {
     const res = await getApiResource(url);
 
     if (res) {
-      const peopleList = res.results.map(({ name, url }) => {
+      const peopleList = res.map(({ name, url }) => {
         const id = getPeopleId(url);
         const img = getPeopleImg(id);
         return {
@@ -54,7 +54,7 @@ const PeoplePage = ({ setErrorApi }) => {
   };
 
   useEffect(() => {
-    getResource(API_PEOPLE + queryPage);
+    getResource(API_PEOPLE);
   }, []);
 
   return (

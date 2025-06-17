@@ -24,7 +24,7 @@ const SearchPage = ({ setErrorApi }) => {
     const res = await getApiResource(API_SEARCH + param);
 
     if (res) {
-      const peopleList = res.results.map(({ name, url }) => {
+      const peopleList = res.map(({ name, url }) => {
         const id = getPeopleId(url);
         const img = getPeopleImg(id);
         return {
