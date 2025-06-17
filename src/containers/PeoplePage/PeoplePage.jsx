@@ -65,6 +65,7 @@ const PeoplePage = ({ setErrorApi }) => {
         nextPage={nextPage}
         countePage={counterPage}
       />
+      <h1 className="header__text">People page</h1>
       {people && <PeopleList people={people} />}
     </>
   );

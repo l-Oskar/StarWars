@@ -21,18 +21,20 @@ const SearchPage = ({ setErrorApi }) => {
   const [people, setPeople] = useState([]);
 
   const getResponse = async (param) => {
-    const res = await getApiResource(API_SEARCH + param);
+    const res = await getApiResource(API_SEARCH);
 
     if (res) {
-      const peopleList = res.map(({ name, url }) => {
-        const id = getPeopleId(url);
-        const img = getPeopleImg(id);
-        return {
-          id,
-          name,
-          img,
-        };
-      });
+      const peopleList = res
+        .filter(({ name }) => name.toLowerCase().includes(param.toLowerCase()))
+        .map(({ name, url }) => {
+          const id = getPeopleId(url);
+          const img = getPeopleImg(id);
+          return {
+            id,
+            name,
+            img,
+          };
+        });
       setPeople(peopleList);
       setErrorApi(false);
     } else {
